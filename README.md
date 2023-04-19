@@ -1,3 +1,22 @@
+
+Steps to use:
+
+- clone
+
+- Build Release_StaticCrt configuration (if needed, change src/tests/Common.props VldToolset property to value of your Visual Studio Toolset
+
+In your program:
+
+- Link against vld.lib
+- copy vld_x64.dll, vld_x64.pdb, dbghelp.dll, Microsoft.DTfW.DHL.manifest, vld.ini
+
+Do this at the top of the main file of the project/dll you want to debug
+
+	#define VLD_FORCE_ENABLE 1
+	#include <vld.h>
+
+#==========================================================================================
+
 # Visual Leak Detector [![Build status](https://ci.appveyor.com/api/projects/status/0kvft8un16e80toj/branch/master?svg=true)](https://ci.appveyor.com/project/KindDragon/vld/branch/master) <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=N3QTYHP9LH6UY&amp;lc=GB&amp;item_name=Visual%20Leak%20Detector&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" target="_blank"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a>
 
 ## Microsoft Fork
