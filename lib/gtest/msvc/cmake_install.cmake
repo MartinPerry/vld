@@ -1,4 +1,4 @@
-# Install script for directory: F:/Azure/libs/vld/lib/gtest
+# Install script for directory: D:/W/_11/vld-master/lib/gtest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/Azure/libs/vld/lib/gtest/msvc/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/W/_11/vld-master/lib/gtest/msvc/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
